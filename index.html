@@ -5,24 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      position:relative;
+      top: 35vh;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .qr_code {
+      position: relative;
+      background: var(--backgroundItem);
+      width: min-content;
+      top: 10vh;
+      border-radius: 7%;
+      box-shadow: var(--boxShadowItem);
+      padding: 0.8rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      height: 220px;
+      width: 220px;
+      border-radius: 5%;
+    }
+
+    h3 {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    h5 {
+      font-weight: normal;
+      text-align: center;
+      letter-spacing: 0.1px;
+    }
+
   </style>
 </head>
-<body>
+<body style="background: var(--background);">
+  <div class="qr_code">
+    <img src="./images/image-qr-code.png" />
+    <h3>
+      Improve your front-end skills by building projects
+    </h3>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
+    <h5>
+    Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </h5>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kristijan Federer</a>.
   </div>
 </body>
 </html>
